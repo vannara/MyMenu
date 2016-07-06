@@ -24,24 +24,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-
-  // Ionic uses AngularUI Router which uses the concept of states
-  // Learn more here: https://github.com/angular-ui/ui-router
-  // Set up the various states which the app can be in.
-  // Each state's controller can be found in controllers.js
-  $stateProvider
-
-  // setup an abstract state for the tabs directive
-    .state('main', {
+$stateProvider
+.state('main', {
     url: '/',
+    views:{
+      "main" :{    
     templateUrl: 'templates/main.html',
     controller: 'MainCtrl'
-    
-  })
-
-  // Each tab has its own nav history stack:
-
-  .state('vegetable', {
+              }    
+        }
+    })
+.state('vegetable', {
     url: '/vegetable',
     views: {
       'vegetable': {
@@ -50,7 +43,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
   .state('meat', {
       url: '/meat',
       views: {
@@ -68,10 +60,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           controller: 'RecipeCtrl'
         }
       }
-    })
-  });
+    });
 
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/');
 
+$urlRouterProvider.otherwise("/");
 });
+
+

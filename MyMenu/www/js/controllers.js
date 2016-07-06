@@ -1,9 +1,9 @@
 angular.module('starter.controllers', [])
 
 .controller('MainCtrl', function($scope,$state) {
-            $scope.OpenVegetablePage=function(){
-                $state.go('vegetable')
-            }
+      $scope.OpenVegetablePage=function(){
+          $state.go('vegetable')
+      }
             
 })
 
