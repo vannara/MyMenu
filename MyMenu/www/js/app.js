@@ -61,7 +61,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/ingredient',
       views: {
         'tab-ingredient': {
-          templateUrl: 'templates/meat.html',
+          templateUrl: 'templates/ingredient.html',
           controller: 'MeatCtrl'
         }
       }
