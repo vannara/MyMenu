@@ -1,5 +1,127 @@
 <ion-view  view-title="select vegetable">
-  <ion-content class="" ng-controller="VegetableCtrl">
-    <p>hello vegetable</p>  
+  <ion-content class="" ng-controller="VegetableCtrl">     
+        <!--first row-->
+        <div class="row">
+            <div class="col">
+                <img src="img/vegetable/artichoke.jpg" width="25%" height="25%"/>               
+            </div>    
+            <div class="col">
+                <img src="img/vegetable/aubergine.jpg" width="25%" height="25%"/>               
+            </div>
+            <div class="col">
+                <img src="img/vegetable/bean-sprouts.jpg" width="35%" height="35%"/>               
+            </div>
+        </div>
+         <div class="row">
+            <div class="col">        
+                <ion-checkbox ng-model="artichoke" class="checkbox checkbox-positive">artichoke</ion-checkbox>
+            </div>    
+            <div class="col">        
+                <ion-checkbox ng-model="aubergine" class="checkbox checkbox-positive">aubergine</ion-checkbox>
+            </div>
+            <div class="col">        
+                <ion-checkbox ng-model="beansprouts" class="checkbox checkbox-positive">bean sprouts</ion-checkbox>
+            </div>
+        </div>
+        <!--second row-->
+        <div class="row">
+            <div class="col">
+                <img src="img/vegetable/beetroot.jpg"  width="35%" height="35%"/>                
+            </div>    
+            <div class="col">
+                <img src="img/vegetable/bitter melon.jpg" width="35%" height="35%"/>                
+            </div>
+            <div class="col">
+                <img src="img/vegetable/Bok-Choy.jpg" width="35%" height="35%"/>               
+            </div>
+        </div>
+         <div class="row">
+            <div class="col">        
+               <ion-checkbox ng-model="beetroot" class="checkbox checkbox-positive">beetroot</ion-checkbox>
+            </div>    
+            <div class="col">        
+                <ion-checkbox ng-model="bittermelon" class="checkbox checkbox-positive">bitter melon</ion-checkbox>                
+            </div>
+            <div class="col">        
+                 <ion-checkbox ng-model="bokchoy" class="checkbox checkbox-positive">bok choy</ion-checkbox>                
+            </div>
+         </div>
+        <!--third row-->        
+        <div class="row">
+            <div class="col">
+                <img src="img/vegetable/broad beans.jpg"  width="35%" height="35%"/>              
+            </div>    
+            <div class="col">
+                <img src="img/vegetable/broccoli.jpg" width="35%" height="35%"/>                
+            </div>
+            <div class="col">
+                <img src="img/vegetable/cabbage.jpg" width="35%" height="35%"/>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">                
+                <ion-checkbox ng-model="broadbean" class="checkbox checkbox-positive">broad beans</ion-checkbox>
+            </div>    
+            <div class="col">                
+                <ion-checkbox ng-model="broccoli" class="checkbox checkbox-positive">broccoli</ion-checkbox>                
+            </div>
+            <div class="col">                
+                <ion-checkbox ng-model="cabbage" class="checkbox checkbox-positive">cabbage</ion-checkbox>                
+            </div>
+        </div>
+
+        <!--fourth row-->
+        <div class="row">
+            <div class="col">
+                <img src="img/vegetable/carrots.jpg"  width="35%" height="35%"/>              
+            </div>    
+            <div class="col">
+                <img src="img/vegetable/cauliflower.jpg" width="35%" height="35%"/>                
+            </div>
+            <div class="col">
+                <img src="img/vegetable/celeriac.jpg" width="35%" height="35%"/>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">                
+                <ion-checkbox ng-model="carrot" class="checkbox checkbox-positive">carrot</ion-checkbox>
+            </div>    
+            <div class="col">                
+                <ion-checkbox ng-model="cauliflower" class="checkbox checkbox-positive">cauliflower</ion-checkbox>                
+            </div>
+            <div class="col">                
+                <ion-checkbox ng-model="celeriac" class="checkbox checkbox-positive">celeriac</ion-checkbox>                
+            </div>
+        </div>
+        <!--fifth row-->
+        <div class="row">
+            <div class="col">
+                <img src="img/vegetable/celery.jpg"  width="35%" height="35%"/>              
+            </div>    
+            <div class="col">
+                <img src="img/vegetable/Chilli.jpg" width="35%" height="35%"/>                
+            </div>
+            <div class="col">
+                <img src="img/vegetable/chinese broccoli.jpg" width="35%" height="35%"/>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">                
+                <ion-checkbox ng-model="celery" class="checkbox checkbox-positive">celery</ion-checkbox>
+            </div>    
+            <div class="col">                
+                <ion-checkbox ng-model="chilli" class="checkbox checkbox-positive">chilli</ion-checkbox>                
+            </div>
+            <div class="col">                
+                <ion-checkbox ng-model="chinesebroccoli" class="checkbox checkbox-positive">chinese broccoli</ion-checkbox>                
+            </div>
+        </div>
+        <div></div>
+        <!--BUTTON add-->        
+        <div class="row">
+            <div class="col" style="text-align:right">
+                <button class="button button-positive" >Add vegetable</button>
+            </div>
+        </div>
   </ion-content>
 </ion-view>
