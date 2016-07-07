@@ -1,11 +1,4 @@
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.services' is found in services.js
-// 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -24,29 +17,50 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-$stateProvider
-.state('main', {
-    url: '/',
-    views:{
-      "main" :{    
-    templateUrl: 'templates/main.html',
-    controller: 'MainCtrl'
-              }    
+
+  $stateProvider
+
+  // setup an abstract state for the tabs directive
+    .state('tab', {
+    url: '/tab',
+    abstract: true,
+    templateUrl: 'templates/tabs.html'
+  })
+
+  // Each tab has its own nav history stack:
+
+  // (Home) :
+    .state('tab.main', {
+      url: '/main',
+      views: {
+        'tab-main': {
+          controller: 'MainCtrl',
+          templateUrl: 'templates/main.html'
         }
+      }
     })
-.state('vegetable', {
+     .state('tab.vegetable', {
     url: '/vegetable',
     views: {
-      'vegetable': {
+      'tab-vegetable': {
         templateUrl: 'templates/vegetable.html',
         controller: 'VegetableCtrl'
       }
     }
   })
-  .state('meat', {
+  .state('tab.meat', {
       url: '/meat',
       views: {
-        'meat': {
+        'tab-meat': {
+          templateUrl: 'templates/meat.html',
+          controller: 'MeatCtrl'
+        }
+      }
+    })
+    .state('tab.ingredient', {
+      url: '/ingredient',
+      views: {
+        'tab-ingredient': {
           templateUrl: 'templates/meat.html',
           controller: 'MeatCtrl'
         }
@@ -62,8 +76,6 @@ $stateProvider
       }
     });
 
-
-$urlRouterProvider.otherwise("/");
+  $urlRouterProvider.otherwise("/tab/main");
 });
-
 

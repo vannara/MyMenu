@@ -2,9 +2,16 @@ angular.module('starter.controllers', [])
 
 .controller('MainCtrl', function($scope,$state) {
       $scope.OpenVegetablePage=function(){
-          $state.go('vegetable')
+          $state.go('tab.vegetable')
       }
-            
+
+      $scope.OpenMeatPage=function(){
+          $state.go('tab.meat')
+      }
+
+      $scope.OpenIngredientPage=function(){
+          $state.go('tab.ingredient')
+      }     
 })
 
 .controller('MeatCtrl', function($scope) {})
@@ -24,7 +31,9 @@ angular.module('starter.controllers', [])
 .controller('RecipeCtrl', function($scope, $stateParams, Chats) {
   
 })
-
-.controller('Ctrl', function($scope) {
+.controller('RecipeDetailCtrl', function($scope, $stateParams, Chats) {
+  
+})
+.controller('IngredientCtrl', function($scope) {
   
 });
