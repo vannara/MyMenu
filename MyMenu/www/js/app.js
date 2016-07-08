@@ -35,20 +35,45 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'tab-main': {
           controller: 'MainCtrl',
-          templateUrl: 'templates/main.html'
+          templateUrl: 'templates/main.html',
+          parent: "tab"
         }
-      }
+      }      
     })
-     .state('tab.vegetable', {
+    
+    .state('tab.vegetable', {
     url: '/vegetable',
     views: {
       'tab-vegetable': {
         templateUrl: 'templates/vegetable.html',
-        controller: 'VegetableCtrl'
+        controller: 'VegetableCtrl',
+        parent: "tab"
+       }
       }
-    }
-  })
-  .state('tab.meat', {
+    })
+  
+  .state('vegetable.b', {
+      url: '/vegetable/b',
+      templateUrl: 'templates/vegetable-b.html',
+      controller: 'VegetableCtrl',
+      parent: "tab" 
+    })
+   
+   .state('vegetable.c', {
+      url: '/vegetable/C',
+      templateUrl: 'templates/vegetable-c.html',
+      controller: 'VegetableCtrl',
+      parent: "tab"      
+    })
+
+    .state('vegetable.d', {
+      url: '/vegetable/d',
+      templateUrl: 'templates/vegetable-d.html',
+      controller: 'VegetableCtrl',
+      parent: "tab"
+    })
+
+    .state('tab.meat', {
       url: '/meat',
       views: {
         'tab-meat': {
@@ -62,10 +87,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'tab-ingredient': {
           templateUrl: 'templates/ingredient.html',
-          controller: 'MeatCtrl'
+          controller: 'IngredientCtrl'
         }
       }
     })
+    
     .state('recipe', {
       url: '/recipe/:recipeId',
       views: {

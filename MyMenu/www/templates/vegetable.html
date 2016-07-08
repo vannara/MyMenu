@@ -1,121 +1,59 @@
 <ion-view  view-title="select vegetable">
-  <ion-content class="" ng-controller="VegetableCtrl">     
-        <!--first row-->
+  <ion-content class="padding" ng-controller="VegetableCtrl">  
+      <div>
+          A 
+          <a ng-href="#/tab/vegetable/b">B</a>          
+          <a href="#/vegetable/C" ng-click="OpenVegetableCPage()">C</a>
+          <a href="#/vegetable/D" ng-click="OpenVegetableDPage()">D</a>
+          <a href="#/vegetable/E" ng-click="OpenVegetableEPage()">E</a>
+          <a href="#/vegetable/F" ng-click="OpenVegetableFPage()">F</a>
+          <a href="#/vegetable/G" ng-click="OpenVegetableGPage()">G</a>
+          <a href="#/vegetable/H" ng-click="OpenVegetableHPage()">H</a>
+          <a href="#/vegetable/I" ng-click="OpenVegetableIPage()">I</a>
+          <a href="#/vegetable/J" ng-click="OpenVegetableJPage()">J</a>
+          <a href="#/vegetable/K" ng-click="OpenVegetableKPage()">K</a>
+          <a href="#/vegetable/L" ng-click="OpenVegetableLPage()">L</a>
+          <a href="#/vegetable/M" ng-click="OpenVegetableMPage()">M</a>
+          <a href="#/vegetable/N" ng-click="OpenVegetableNPage()">N</a>
+          <a href="#/vegetable/O" ng-click="OpenVegetableOPage()">O</a>
+          <a href="#/vegetable/P" ng-click="OpenVegetablePPage()">P</a>
+          <a href="#/vegetable/Q" ng-click="OpenVegetableQPage()">Q</a>
+          <a href="#/vegetable/R" ng-click="OpenVegetableRPage()">R</a>
+          <a href="#/vegetable/S" ng-click="OpenVegetableSPage()">S</a>
+          <a href="#/vegetable/T" ng-click="OpenVegetableTPage()">T</a>
+          <a href="#/vegetable/U" ng-click="OpenVegetableUPage()">U</a>
+          <a href="#/vegetable/V" ng-click="OpenVegetableVPage()">V</a>
+          <a href="#/vegetable/W" ng-click="OpenVegetableWPage()">W</a>
+          <a href="#/vegetable/X" ng-click="OpenVegetableXPage()">X</a>
+          <a href="#/vegetable/Y" ng-click="OpenVegetableYPage()">Y</a>
+          <a href="#/vegetable/Z" ng-click="OpenVegetableZPage()">Z</a>
+        </div>   
+       
+        <!--first row-->       
         <div class="row">
-            <div class="col">
+            <div class="col" >
                 <img src="img/vegetable/artichoke.jpg" width="25%" height="25%"/>               
             </div>    
             <div class="col">
                 <img src="img/vegetable/aubergine.jpg" width="25%" height="25%"/>               
             </div>
-            <div class="col">
+            <!--<div class="col">
                 <img src="img/vegetable/bean-sprouts.jpg" width="35%" height="35%"/>               
-            </div>
-        </div>
-         <div class="row">
-            <div class="col">        
-                <ion-checkbox ng-model="artichoke" class="checkbox checkbox-positive">artichoke</ion-checkbox>
-            </div>    
-            <div class="col">        
-                <ion-checkbox ng-model="aubergine" class="checkbox checkbox-positive">aubergine</ion-checkbox>
-            </div>
-            <div class="col">        
-                <ion-checkbox ng-model="beansprouts" class="checkbox checkbox-positive">bean sprouts</ion-checkbox>
-            </div>
-        </div>
-        <!--second row-->
-        <div class="row">
-            <div class="col">
-                <img src="img/vegetable/beetroot.jpg"  width="35%" height="35%"/>                
-            </div>    
-            <div class="col">
-                <img src="img/vegetable/bitter melon.jpg" width="35%" height="35%"/>                
-            </div>
-            <div class="col">
-                <img src="img/vegetable/Bok-Choy.jpg" width="35%" height="35%"/>               
-            </div>
-        </div>
-         <div class="row">
-            <div class="col">        
-               <ion-checkbox ng-model="beetroot" class="checkbox checkbox-positive">beetroot</ion-checkbox>
-            </div>    
-            <div class="col">        
-                <ion-checkbox ng-model="bittermelon" class="checkbox checkbox-positive">bitter melon</ion-checkbox>                
-            </div>
-            <div class="col">        
-                 <ion-checkbox ng-model="bokchoy" class="checkbox checkbox-positive">bok choy</ion-checkbox>                
-            </div>
-         </div>
-        <!--third row-->        
-        <div class="row">
-            <div class="col">
-                <img src="img/vegetable/broad beans.jpg"  width="35%" height="35%"/>              
-            </div>    
-            <div class="col">
-                <img src="img/vegetable/broccoli.jpg" width="35%" height="35%"/>                
-            </div>
-            <div class="col">
-                <img src="img/vegetable/cabbage.jpg" width="35%" height="35%"/>                
-            </div>
+            </div>-->
         </div>
         <div class="row">
-            <div class="col">                
-                <ion-checkbox ng-model="broadbean" class="checkbox checkbox-positive">broad beans</ion-checkbox>
+            <div class="col checkbox-balanced">        
+                <!--<ion-checkbox ng-model="artichoke" class="checkbox checkbox-positive">artichoke</ion-checkbox>-->
+                <label class="checkbox"><input type="checkbox">artichoke </label>
             </div>    
-            <div class="col">                
-                <ion-checkbox ng-model="broccoli" class="checkbox checkbox-positive">broccoli</ion-checkbox>                
-            </div>
-            <div class="col">                
-                <ion-checkbox ng-model="cabbage" class="checkbox checkbox-positive">cabbage</ion-checkbox>                
-            </div>
+            <div class="col checkbox-balanced">        
+                <!--<ion-checkbox ng-model="aubergine" class="checkbox checkbox-positive">aubergine</ion-checkbox>-->
+                <label class="checkbox">
+                        <input type="checkbox">aubergine
+                </label>
+            </div>            
         </div>
-
-        <!--fourth row-->
-        <div class="row">
-            <div class="col">
-                <img src="img/vegetable/carrots.jpg"  width="35%" height="35%"/>              
-            </div>    
-            <div class="col">
-                <img src="img/vegetable/cauliflower.jpg" width="35%" height="35%"/>                
-            </div>
-            <div class="col">
-                <img src="img/vegetable/celeriac.jpg" width="35%" height="35%"/>                
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">                
-                <ion-checkbox ng-model="carrot" class="checkbox checkbox-positive">carrot</ion-checkbox>
-            </div>    
-            <div class="col">                
-                <ion-checkbox ng-model="cauliflower" class="checkbox checkbox-positive">cauliflower</ion-checkbox>                
-            </div>
-            <div class="col">                
-                <ion-checkbox ng-model="celeriac" class="checkbox checkbox-positive">celeriac</ion-checkbox>                
-            </div>
-        </div>
-        <!--fifth row-->
-        <div class="row">
-            <div class="col">
-                <img src="img/vegetable/celery.jpg"  width="35%" height="35%"/>              
-            </div>    
-            <div class="col">
-                <img src="img/vegetable/Chilli.jpg" width="35%" height="35%"/>                
-            </div>
-            <div class="col">
-                <img src="img/vegetable/chinese broccoli.jpg" width="35%" height="35%"/>                
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">                
-                <ion-checkbox ng-model="celery" class="checkbox checkbox-positive">celery</ion-checkbox>
-            </div>    
-            <div class="col">                
-                <ion-checkbox ng-model="chilli" class="checkbox checkbox-positive">chilli</ion-checkbox>                
-            </div>
-            <div class="col">                
-                <ion-checkbox ng-model="chinesebroccoli" class="checkbox checkbox-positive">chinese broccoli</ion-checkbox>                
-            </div>
-        </div>
+      
         <div></div>
         <!--BUTTON add-->        
         <div class="row">
