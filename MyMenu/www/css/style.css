@@ -1,1 +1,7 @@
 /* Empty. Add your own CSS if you like */
+.disabled {
+   pointer-events: none;
+   cursor: default;
+   color: grey;
+   text-decoration: none
+}

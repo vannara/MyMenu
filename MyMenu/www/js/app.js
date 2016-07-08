@@ -35,44 +35,21 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'tab-main': {
           controller: 'MainCtrl',
-          templateUrl: 'templates/main.html',
-          parent: "tab"
+          templateUrl: 'templates/main.html'
         }
       }      
     })
     
     .state('tab.vegetable', {
-    url: '/vegetable',
+    url: '/vegetable/:id',
     views: {
       'tab-vegetable': {
         templateUrl: 'templates/vegetable.html',
-        controller: 'VegetableCtrl',
-        parent: "tab"
+        controller: 'VegetableCtrl'
        }
       }
     })
-  
-  .state('vegetable.b', {
-      url: '/vegetable/b',
-      templateUrl: 'templates/vegetable-b.html',
-      controller: 'VegetableCtrl',
-      parent: "tab" 
-    })
-   
-   .state('vegetable.c', {
-      url: '/vegetable/C',
-      templateUrl: 'templates/vegetable-c.html',
-      controller: 'VegetableCtrl',
-      parent: "tab"      
-    })
-
-    .state('vegetable.d', {
-      url: '/vegetable/d',
-      templateUrl: 'templates/vegetable-d.html',
-      controller: 'VegetableCtrl',
-      parent: "tab"
-    })
-
+ 
     .state('tab.meat', {
       url: '/meat',
       views: {
@@ -102,6 +79,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     });
 
-  $urlRouterProvider.otherwise("/tab/main");
+  $urlRouterProvider.otherwise("/tab/main");    
 });
 
