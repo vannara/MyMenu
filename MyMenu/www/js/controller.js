@@ -11,14 +11,15 @@ angular.module('starter.controllers', [])
 
       $scope.OpenIngredientPage=function(){
           $state.go('tab.ingredient')
-      }     
+      }
 })
 
 .controller('MeatCtrl', function($scope) {
-    
+
 })
 
-.controller('VegetableCtrl', function($scope,$state) { 
+.controller('VegetableCtrl', function($scope,$state, $stateParams) {
+    console.log($stateParams.id);
     // $scope.OpenVegetableAPage()=function(){
     //     $state.go('tab.vegetable')
     // }
@@ -100,13 +101,13 @@ angular.module('starter.controllers', [])
   })
 
 .controller('RecipeCtrl', function($scope, $stateParams, Chats) {
-  
+
 })
 .controller('RecipeDetailCtrl', function($scope, $stateParams, Chats) {
-  
+
 })
 .controller('IngredientCtrl', function($scope) {
-  
+
 })
 
 ;

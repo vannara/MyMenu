@@ -38,11 +38,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           templateUrl: 'templates/main.html',
           parent: "tab"
         }
-      }      
+      }
     })
-    
+
     .state('tab.vegetable', {
-    url: '/vegetable',
+    url: '/vegetable/:id',
     views: {
       'tab-vegetable': {
         templateUrl: 'templates/vegetable.html',
@@ -51,27 +51,27 @@ angular.module('starter', ['ionic', 'starter.controllers'])
        }
       }
     })
-  
-  .state('vegetable.b', {
-      url: '/vegetable/b',
-      templateUrl: 'templates/vegetable-b.html',
-      controller: 'VegetableCtrl',
-      parent: "tab" 
-    })
-   
-   .state('vegetable.c', {
-      url: '/vegetable/C',
-      templateUrl: 'templates/vegetable-c.html',
-      controller: 'VegetableCtrl',
-      parent: "tab"      
-    })
 
-    .state('vegetable.d', {
-      url: '/vegetable/d',
-      templateUrl: 'templates/vegetable-d.html',
-      controller: 'VegetableCtrl',
-      parent: "tab"
-    })
+  // .state('vegetable.b', {
+  //     url: '/vegetable/b',
+  //     templateUrl: 'templates/vegetable-b.html',
+  //     controller: 'VegetableCtrl',
+  //     parent: "tab"
+  //   })
+
+  //  .state('vegetable.c', {
+  //     url: '/vegetable/C',
+  //     templateUrl: 'templates/vegetable-c.html',
+  //     controller: 'VegetableCtrl',
+  //     parent: "tab"
+  //   })
+   //
+  //   .state('vegetable.d', {
+  //     url: '/vegetable/d',
+  //     templateUrl: 'templates/vegetable-d.html',
+  //     controller: 'VegetableCtrl',
+  //     parent: "tab"
+  //   })
 
     .state('tab.meat', {
       url: '/meat',
@@ -91,7 +91,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-    
+
     .state('recipe', {
       url: '/recipe/:recipeId',
       views: {
@@ -104,4 +104,3 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
   $urlRouterProvider.otherwise("/tab/main");
 });
-
