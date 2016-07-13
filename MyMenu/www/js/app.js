@@ -49,32 +49,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
        }
       }
     })
-<<<<<<< HEAD
- 
-=======
 
-  // .state('vegetable.b', {
-  //     url: '/vegetable/b',
-  //     templateUrl: 'templates/vegetable-b.html',
-  //     controller: 'VegetableCtrl',
-  //     parent: "tab"
-  //   })
-
-  //  .state('vegetable.c', {
-  //     url: '/vegetable/C',
-  //     templateUrl: 'templates/vegetable-c.html',
-  //     controller: 'VegetableCtrl',
-  //     parent: "tab"
-  //   })
-   //
-  //   .state('vegetable.d', {
-  //     url: '/vegetable/d',
-  //     templateUrl: 'templates/vegetable-d.html',
-  //     controller: 'VegetableCtrl',
-  //     parent: "tab"
-  //   })
-
->>>>>>> c9e6040439a5d1d35f0a9d63d067f302bded71b9
     .state('tab.meat', {
       url: '/meat',
       views: {
